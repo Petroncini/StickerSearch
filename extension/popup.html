@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px/1.4 system-ui, sans-serif; width: 260px; margin: 0; padding: 14px; color: #111b21; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e9edef; background: #202c33; } .muted { color: #8696a0 !important; } }
+  h1 { font-size: 14px; margin: 0 0 8px; }
+  .muted { color: #667781; }
+  .err { color: #d33; word-break: break-word; }
+  button { margin-top: 10px; border: 1px solid #d1d7db; background: transparent; color: inherit; border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <h1>Sticker Search</h1>
+  <div id="model">Model: …</div>
+  <div id="count" class="muted"></div>
+  <div id="err" class="err"></div>
+  <button id="load">Download model now</button>
+  <button id="clear">Clear index</button>
+  <script src="popup.js"></script>
+</body>
+</html>

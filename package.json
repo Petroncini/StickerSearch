@@ -1,0 +1,14 @@
+{
+  "name": "sticker-search",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Firefox extension: semantic search for the WhatsApp Web sticker panel",
+  "scripts": {
+    "build": "node scripts/vendor.mjs",
+    "lint": "npm run build && web-ext lint -s extension",
+    "start": "npm run build && web-ext run -s extension --url https://web.whatsapp.com",
+    "package": "npm run build && web-ext build -s extension -a dist --overwrite-dest"
+  },
+  "dependencies": { "@huggingface/transformers": "3.8.1" },
+  "devDependencies": { "web-ext": "^8.0.0" }
+}
